@@ -1,0 +1,200 @@
+*{
+    font-family: "Acme", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+    color: white;
+}
+body{
+    margin: 0px;
+    background-color: black;
+}
+.name{
+    margin-left: 50px;
+    width: 50%;
+}
+a{
+    text-decoration: none;   
+    position: relative;
+}
+li > a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 183, 0);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+    transform: scaleX(0);
+}
+li > a:hover::after{
+    width: 100%;
+    transform: scaleX(1);
+}
+li > a:active{
+    color: yellow;
+}
+.navbar{
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 5;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+li{
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 15px;
+}
+.yellow{
+    color: rgb(255, 183, 0);
+}
+#Home{
+    padding: 90px;
+    font-size: 30px;
+    display: flex;
+}
+.intro{
+    width: 50%; 
+    padding-top: 100px;
+}
+.intro > p{
+    line-height: 2px;
+}
+.intro > h1{
+    line-height: 20px;
+}
+.a1,.linkedIN{
+    background-color: rgb(255, 183, 0);
+    color: black;
+    font-size: 20px;
+    border: 2px solid rgb(255, 183, 0);
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: 700;
+}
+.pic{
+    padding-top: 50px;
+    margin-left: 90px;
+}
+progress {
+    width: 400px;
+    height : 15px;
+    border: 2px solid black;
+}
+progress::-webkit-progress-bar {
+    background-color: rgb(10, 10, 10);
+}
+progress::-webkit-progress-value {
+    background-color: rgb(255, 183, 0);
+}
+#About{
+    padding: 90px;
+    display: flex;
+}
+.skill{
+    width: 90%;
+}
+.skill > p {
+    line-height: 1px;
+    font-weight: 100;
+    color: gray;
+}
+.info{
+    padding-left: 90px;
+    padding-right: 40px;
+}
+.info > pre{
+    color: gray;
+}
+#Resume{
+    padding: 90px;
+}
+#Resume > iframe{
+    width: 850px;   
+    height: 1150px;
+    padding-left: 95px;
+}
+#Project{
+    /* padding: 90px; */
+    /* width: 1/2; */
+    /* display: flex; */
+    /* gap: 10px; */
+}
+.projectHead{
+    width: fit-content;
+    padding-left: 690px;
+    
+}
+.projectCard{
+    width: 220px;
+    height: 280px;
+    background-color:rgb(44, 44, 44);
+    border-radius: 10px;
+}
+.projectCard > img{
+    width: 200px;
+    height: 150px;
+    padding: 9px;
+}
+.projectCard > h2{
+    margin-top: 4px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    line-height: 0px;
+}
+.projectCard > p{
+    margin-top: 0px;
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+}
+.social{
+    display: flex;
+    margin-left: 5px;
+    /* margin-bottom: 5px; */
+}
+.link{
+    border: 2px solid rgb(255, 183, 0);
+    width: fit-content;
+    border-radius: 4px;
+    background-color: rgb(255, 183, 0);
+}
+.link2{
+    margin-left: 5px;
+}
+.link > a{
+    color: black;
+    font-weight: bold;
+}
+.projectFrame{
+    padding: 10px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#Contact h1{
+    text-align: center;
+}
+.ContactContent{
+    padding: 0px 300px;
+    display: flex;
+    gap: 9px;
+}
+.ContactContent p{
+    margin-top: 21px;
+}
+.ContactImg{
+    padding: 0px 300px 100px;
+}
